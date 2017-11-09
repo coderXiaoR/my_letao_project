@@ -90,6 +90,7 @@ a:link, a:visited, a:hover, a:active {
 #lt_main {
   padding-left: 180px;
   transition: all 1s;
+  height: 100%;
 }
 #lt_main.full_width {
   padding-left: 0;
@@ -99,6 +100,7 @@ a:link, a:visited, a:hover, a:active {
   height: 50px;
   padding: 0 15px;
   line-height: 50px;
+  width: 100%;
 }
 #lt_main .top_bar a {
   color: #fff;
@@ -107,7 +109,16 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .lt_content {
-  margin-top: 20px;
+  overflow: hidden;
   margin-left: 10px;
   margin-right: 10px;
+  height: calc(100% - 50px);
+}
+.lt_content .breadcrumb {
+  margin-top: 20px;
+}
+.echart {
+  margin-top: 120px;
+  width: 40%;
+  height: 400px;
 }
