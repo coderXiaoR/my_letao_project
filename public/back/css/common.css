@@ -17,7 +17,7 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-/* 首页 */
+/* 登录页 */
 .login_bg {
   height: 100%;
   background-color: #222d32;
@@ -25,4 +25,89 @@ a:link, a:visited, a:hover, a:active {
 
 .mt_150 {
   margin-top: 150px;
+}
+
+/* 管理首页 */
+#lt_aside {
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  left: 0;
+  transition: all 1s;
+  z-index: 10;
+}
+#lt_aside.hidden_self {
+  left: -180px;
+}
+#lt_aside .brand {
+  width: 100%;
+  height: 50px;
+  background-color: #367fa9;
+}
+#lt_aside .brand a {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+}
+#lt_aside .user_info {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#lt_aside .user_info img {
+  width: 40%;
+}
+#lt_aside .user_info p {
+  color: #fff;
+  margin-top: 10px;
+}
+.side_nav {
+  margin-top: 30px;
+}
+.side_nav ul li a {
+  display: block;     
+  border: 3px solid transparent;      
+  padding-left: 30px;
+  font-size: 14px;  
+  color: #aaa;
+  line-height: 34px;
+  height: 40px;      
+}
+.side_nav ul li a.current_tab {
+  border-left-color: #367fa9;
+  background-color: #1d1f21;
+  color: #fff;
+}
+.side_nav .child a {
+  font-size: 12px;
+  display: block;
+  padding-left: 50px; 
+}
+#lt_main {
+  padding-left: 180px;
+  transition: all 1s;
+}
+#lt_main.full_width {
+  padding-left: 0;
+}
+#lt_main .top_bar {
+  background-color: #3c8dbc;
+  height: 50px;
+  padding: 0 15px;
+  line-height: 50px;
+}
+#lt_main .top_bar a {
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.lt_content {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
