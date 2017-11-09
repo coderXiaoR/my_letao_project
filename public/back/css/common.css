@@ -1,0 +1,27 @@
+@charset "UTF-8";
+html,body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.login_bg {
+  height: 100%;
+  background-color: #222d32;
+}
+
+.mt_150 {
+  margin-top: 150px;
+}
