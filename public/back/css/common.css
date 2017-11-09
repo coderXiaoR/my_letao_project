@@ -17,6 +17,7 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+/* 首页 */
 .login_bg {
   height: 100%;
   background-color: #222d32;

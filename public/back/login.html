@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>管理系统登录</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
   <link rel="stylesheet" href="./css/common.css">
 </head>
 
@@ -20,13 +22,13 @@
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-3 control-label">用户名</label>
               <div class="col-sm-9">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+                <input type="text" name="username" class="form-control" id="username" placeholder="请输入用户名">
               </div>
             </div>
             <div class="form-group">
               <label for="inputPassword3" class="col-sm-3 control-label">密码</label>
               <div class="col-sm-9">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码">
               </div>
             </div>
             <div class="form-group">
@@ -42,6 +44,11 @@
       </div>
     </div>
   </div>
+  <script  src="./lib/jquery/jquery.min.js"></script>
+  <script  src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+  <script  src="./lib/nprogress/nprogress.js"></script>
+  <script  src="./js/common.js"></script>
+  <script  src="./js/login.js"></script>
 </body>
 
 </html>
