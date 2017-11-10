@@ -134,3 +134,29 @@ a:link, a:visited, a:hover, a:active {
 .mb_15 {
   margin-bottom: 15px;
 }
+/* 二级菜单管理页面 */
+.img_preview {
+  margin-top: 20px;
+}
+.img_preview img {
+  width: 100px;
+  height: 100px;
+}
+.mini_logo {
+  width: 80px;
+}
+.img_upload_father {
+  position: relative;
+  cursor: pointer;
+}
+.img_upload_father:hover button {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+} 
+#fileupload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
