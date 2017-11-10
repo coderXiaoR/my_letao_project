@@ -130,3 +130,7 @@ a:link, a:visited, a:hover, a:active {
 .table.table-hover td {
   vertical-align: middle;
 }
+/* 一级菜单管理界面 */
+.mb_15 {
+  margin-bottom: 15px;
+}
