@@ -122,3 +122,11 @@ a:link, a:visited, a:hover, a:active {
   width: 40%;
   height: 400px;
 }
+
+/* 用户管理页面 */
+.table {
+  text-align: center;
+}
+.table.table-hover td {
+  vertical-align: middle;
+}

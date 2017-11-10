@@ -2,97 +2,102 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>乐淘管理系统-首页</title>
-  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <script  src="./lib/echarts/echarts.js"></script>
+	<meta charset="UTF-8">
+	<title>乐淘管理系统-首页</title>
+	<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<script src="./lib/echarts/echarts.js"></script>
 </head>
 
 <body>
-  <!-- 侧边导航栏 -->
-  <div id="lt_aside">
-    <!-- 左上标题 -->
-    <div class="brand">
-      <a href="index.html">ITCAST</a>
-    </div>
-    <div class="user_info">
-      <img src="./images/default.png" class="img-circle">
-      <p>超级管理员</p>
-    </div>
-    <div class="side_nav">
-      <ul>
-        <li>
-          <a href="user.html">
-            <i class="glyphicon glyphicon-user"></i> 用户管理</a>
-        </li>
-        <li>
-          <a href="javascript:;">
-            <i class="glyphicon glyphicon-list"></i> 分类管理</a>
-          <div class="child" style="display:none">
-            <a href="first.html">一级分类</a>
-            <a href="second.html">二级分类</a>
-          </div>
-        </li>
-        <li>
-          <a href="product.html">
-            <i class="glyphicon glyphicon-tags"></i> 商品管理</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- 主页面 -->
-  <div id="lt_main">
-    <!-- 顶部导航条 -->
-    <div class="top_bar">
-      <a href="javascript:;" class="btn_menu pull-left">
-        <i class="glyphicon glyphicon-align-justify"></i>
-      </a>
-      <a href="javascript:;" class="btn_logout pull-right" data-toggle="modal" data-target="#myModal">
-        <i class="glyphicon glyphicon-log-out"></i>
-      </a>
-    </div>
-    <!-- 页面内容 -->
-    <div class="lt_content">
-      <ol class="breadcrumb">
-        <li>
-          <a href="#">管理系统</a>
-        </li>
-        <li class="active">首页</li>
-      </ol>
-      <div id="histogram" class="pull-left echart"></div>
-      <div id="pie_chart" class="pull-right echart"></div>
-    </div>
-  </div>
-  <div class="modal fade" tabindex="-1" id="myModal">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title">温馨提示</h4>
-        </div>
-        <div class="modal-body text-danger">
-          <p>
-            <i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-          <button type="button" class="btn btn-primary btn_confirm">确定</button>
-        </div>
-      </div>
-      <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-  </div>
-  <!-- /.modal -->
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="./lib/nprogress/nprogress.js"></script>
-  <script src="./js/common.js"></script>
-  <script  src="./js/index.js"></script>
+	<!-- 侧边导航栏 -->
+	<div id="lt_aside">
+		<!-- 左上标题 -->
+		<div class="brand">
+			<a href="index.html">ITCAST</a>
+		</div>
+		<div class="user_info">
+			<img src="./images/default.png" class="img-circle">
+			<p>超级管理员</p>
+		</div>
+		<div class="side_nav">
+			<ul>
+				<li>
+					<a href="user.html">
+						<i class="glyphicon glyphicon-user"></i> 用户管理</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<i class="glyphicon glyphicon-list"></i> 分类管理</a>
+					<div class="child" style="display:none">
+						<a href="first.html">一级分类</a>
+						<a href="second.html">二级分类</a>
+					</div>
+				</li>
+				<li>
+					<a href="product.html">
+						<i class="glyphicon glyphicon-tags"></i> 商品管理</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 主页面 -->
+	<div id="lt_main">
+		<!-- 顶部导航条 -->
+		<div class="top_bar">
+			<a href="javascript:;" class="btn_menu pull-left">
+				<i class="glyphicon glyphicon-align-justify"></i>
+			</a>
+			<a href="javascript:;" class="btn_logout pull-right" data-toggle="modal" data-target="#myModal">
+				<i class="glyphicon glyphicon-log-out"></i>
+			</a>
+		</div>
+		<!-- 页面内容 -->
+		<div class="lt_content">
+			<ol class="breadcrumb">
+				<li>
+					<a href="#">管理系统</a>
+				</li>
+				<li class="active">首页</li>
+			</ol>
+			<div id="histogram" class="pull-left echart"></div>
+			<div id="pie_chart" class="pull-right echart"></div>
+			<div class="table_box">
+				<table class="table .table-bordered .table-hover .table-striped">
+					
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" tabindex="-1" id="myModal">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">温馨提示</h4>
+				</div>
+				<div class="modal-body text-danger">
+					<p>
+						<i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary btn_confirm">确定</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<script src="./lib/jquery/jquery.min.js"></script>
+	<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./lib/nprogress/nprogress.js"></script>
+	<script src="./js/common.js"></script>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
