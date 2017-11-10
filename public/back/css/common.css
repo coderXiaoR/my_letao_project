@@ -34,8 +34,8 @@ a:link, a:visited, a:hover, a:active {
   height: 100%;
   background-color: #222d32;
   left: 0;
-  transition: all 1s;
   z-index: 10;
+  transition: all .7s;
 }
 #lt_aside.hidden_self {
   left: -180px;
@@ -89,8 +89,8 @@ a:link, a:visited, a:hover, a:active {
 }
 #lt_main {
   padding-left: 180px;
-  transition: all 1s;
   height: 100%;
+  transition: all .7s;
 }
 #lt_main.full_width {
   padding-left: 0;
