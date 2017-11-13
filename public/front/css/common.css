@@ -115,6 +115,7 @@ img {
 }
 
 .lt_product .item {
+  box-shadow: 0 10px 10px #ccc;
   border: 1px solid #ccc;
   width: 48%;
   float: left;
@@ -133,4 +134,8 @@ img {
 
 .lt_product .item .oldPrice {
   text-decoration: line-through;
+}
+.lt_product button {
+  background-color: #069;
+  color: #fff;
 }

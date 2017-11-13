@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>乐淘商城-搜索中心</title>
+  <title>乐淘商城-搜索列表</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="lib/mui/css/mui.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/searchList.css">
 </head>
 
 <body>
@@ -33,10 +33,25 @@
             <input type="text" name="key" placeholder="请输入搜索关键字">
             <a href="javascript:;" class="btn_search">搜索</a>
           </div>
-          <div class="lt_history">
-
-            <!-- 挖个大坑 -->
-
+          <!-- 搜索的商品列表 -->
+          <div class="search_prolist">
+            <div class="lt_sort">
+              <span>上架时间
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span class="btn_sort sort_price">价格
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span class="btn_sort sort_num">库存
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span>折扣
+                <i class="fa fa-angle-down"></i>
+              </span>
+            </div>
+            <div class="lt_product">
+              <!-- 搜索列表大坑 -->
+            </div>
           </div>
         </div>
       </div>
@@ -72,25 +87,21 @@
       </ul>
     </div>
   </div>
-  <script id='tpl_history' type="text/html">
-    {{if arr.length === 0}}
-    <p>没有搜索历史记录</p>
-    {{/if}} {{if arr.length > 0}}
-    <div class="history_header mui-clearfix">
-      <span class="mui-pull-left">搜索历史</span>
-      <span class="mui-pull-right btn_empty">
-        <i class="fa fa-trash"></i>清空记录</span>
-    </div>
-    <div class="history_list">
-      <ul>
-        {{each arr v i}}
-        <li>
-          <a href="#">{{v}}</a>
-          <i data-index="{{i}}" class="mui-pull-right mui-icon mui-icon-closeempty btn_delete"></i>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
+  <script id='tpl_product' type="text/html">
+    {{if data.length === 0}}
+    <p>没有相关产品</p>
+    {{/if}} {{if data.length > 0}}
+    {{each data v i}}
+    <a href="#" class="item">
+      <img src="{{v.pic[0].picAddr}}" alt="">
+      <p class="mui-ellipsis-2">{{v.proName}}</p>
+      <p>
+        <span class="price">&yen;{{v.price}}</span>
+        <span class="oldPrice">&yen;{{v.oldPrice}}</span>
+      </p>
+      <button class="mui-btn">立即购买</button>
+    </a>
+    {{/each}}
     {{/if}}
   </script>
 
@@ -98,7 +109,7 @@
   <script src="lib/mui/js/mui.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="js/common.js"></script>
-  <script src="./js/search.js"></script>
+  <script src="./js/searchList.js"></script>
 </body>
 
 </html>
