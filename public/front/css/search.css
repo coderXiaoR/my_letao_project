@@ -45,3 +45,11 @@
 .history_list ul li:last-of-type {
   border:none;
 }
+.history_list ul li a {
+  display: block;
+  float: left;
+  min-width: 30px;
+}
+.history_list ul li a:active {
+  color: red;
+}

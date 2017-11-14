@@ -7,7 +7,6 @@ mui(".mui-scroll-wrapper").scroll({
   indicators: false
 });
 
-
 //轮播图自动播放功能
 var gallery = mui('.mui-slider');
 gallery.slider({
@@ -46,4 +45,10 @@ var tools = {
     return this.getParamObj()[key];
   },
   //作业：var obj = {name:"zs", age:18, desc:"呵呵"}  转换成字符串  name=zs&age=18&desc=呵呵
+  //检测用户是否登录
+  checkLogin:function (data) {
+    if(data.error === 400){
+      location.href = "login.html?retUrl="+location.href;
+    }
+  }
 }

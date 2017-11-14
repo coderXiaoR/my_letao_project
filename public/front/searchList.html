@@ -92,7 +92,7 @@
     <p>没有相关产品</p>
     {{/if}} {{if data.length > 0}}
     {{each data v i}}
-    <a href="#" class="item">
+    <a href="product.html?productId={{v.id}}" class="item">
       <img src="{{v.pic[0].picAddr}}" alt="">
       <p class="mui-ellipsis-2">{{v.proName}}</p>
       <p>
